@@ -96,44 +96,34 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-16" style="background: linear-gradient(120deg, #181925 75%, #22213c 100%);">
-      <div class="absolute inset-0 z-0 flex items-center justify-center gap-8 px-8 pt-20">
-        <div class="w-1/2 h-3/4 relative rounded-2xl overflow-hidden shadow-2xl">
-          <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-            <source src="before.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium">
-            Before
-          </div>
-        </div>
-        <div class="w-1/2 h-3/4 relative rounded-2xl overflow-hidden shadow-2xl">
-          <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-            <source src="After.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium">
-            After
-          </div>
-        </div>
-        <div class="glow-effect"></div>
-      </div>
-      <div class="absolute inset-0 hero-overlay z-0"></div>
-      <div class="relative z-10 text-center px-4 max-w-4xl">
-        <h1 class="text-6xl md:text-7xl font-bold gradient-text drop-shadow-xl mb-6" style="letter-spacing: -2px;">
-          From Raw to Remarkable
-        </h1>
-        <p class="text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-semibold">
-          At FunFlow, we transform unpolished footage into scroll-stopping edits that fuel growth.
-        </p>
-        <a href="#cta" class="gradient-bg text-white px-9 py-4 rounded-full font-bold text-xl shadow-lg hover:scale-105 hover:shadow-2xl transition inline-flex items-center">
-          Get Your Free Demo Edit <i class="fas fa-arrow-right ml-3"></i>
-        </a>
-      </div>
-      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
-        <a href="#proof" class="text-white animate-bounce">
-          <i class="fas fa-chevron-down text-2xl"></i>
-        </a>
-      </div>
-    </section>
+ <section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden" style="background: linear-gradient(120deg, #181925 60%, #22213c 100%);">
+  <!-- Glowing, blurred background visual effect -->
+  <div class="absolute inset-0 z-0 flex items-center justify-center">
+    <div class="w-[70vw] h-[55vh] glow-effect"></div>
+  </div>
+  <!-- Optionally, layered animated gradient for extra effect -->
+  <div class="absolute inset-0 z-0" style="background: radial-gradient(ellipse at 80% 20%, #7f5af055 0%, transparent 65%), radial-gradient(circle at 25% 80%, #2cb67d40 0%, transparent 52%);"></div>
+  <!-- Overlay for dark contrast -->
+  <div class="absolute inset-0 hero-overlay z-0"></div>
+  <!-- Main hero text and CTA -->
+  <div class="relative z-10 text-center px-4 max-w-4xl">
+    <h1 class="text-6xl md:text-7xl font-bold gradient-text drop-shadow-xl mb-6" style="letter-spacing: -2px;">
+      From Raw to Remarkable
+    </h1>
+    <p class="text-2xl text-white/90 mb-10 max-w-2xl mx-auto font-semibold">
+      At FunFlow, we transform unpolished footage into scroll-stopping edits that fuel growth.
+    </p>
+    <a href="#cta" class="gradient-bg text-white px-9 py-4 rounded-full font-bold text-xl shadow-lg hover:scale-105 hover:shadow-2xl transition inline-flex items-center">
+      Get Your Free Demo Edit <i class="fas fa-arrow-right ml-3"></i>
+    </a>
+  </div>
+  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+    <a href="#proof" class="text-white animate-bounce">
+      <i class="fas fa-chevron-down text-2xl"></i>
+    </a>
+  </div>
+</section>
+
 
     <!-- Proof Section -->
     <section id="proof" class="py-20 section-dark">
@@ -320,41 +310,6 @@
     </section>
 
     <!-- Portfolio (Before/After Gallery) Section -->
-    <section id="portfolio" class="py-20 section-dark">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4 text-white">
-            See the <span class="gradient-text">Transformation</span>
-          </h2>
-          <p class="text-gray-200 max-w-2xl mx-auto">
-            Real examples of our editing magic
-          </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div class="relative rounded-2xl overflow-hidden h-96">
-            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-              <source src="before.mp4" type="video/mp4" />
-            </video>
-            <div class="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium">
-              Before
-            </div>
-          </div>
-          <div class="relative rounded-2xl overflow-hidden h-96">
-            <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-              <source src="After.mp4" type="video/mp4" />
-            </video>
-            <div class="absolute bottom-4 left-4 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium">
-              After
-            </div>
-          </div>
-        </div>
-        <div class="text-center mt-12">
-          <a href="#cta" class="gradient-bg text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition inline-flex items-center">
-            Get Your Free Demo Edit <i class="fas fa-arrow-right ml-3"></i>
-          </a>
-        </div>
-      </div>
-    </section>
 
     <!-- Call-to-Action Section -->
     <section id="cta" class="relative py-32 overflow-hidden section-dark">
@@ -419,7 +374,7 @@
           <div>
             <h4 class="text-lg font-semibold mb-4">Connect</h4>
             <div class="flex space-x-4 mb-4">
-              <a href="https://www.instagram.com/rabjots_/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 transition">
+              <a href="https://www.instagram.com/funflowedits" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 transition">
                 <i class="fab fa-instagram"></i>
               </a>
             </div>
